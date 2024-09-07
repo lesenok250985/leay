@@ -1,0 +1,295 @@
+/* ----- Спецификация -----*/
+
+body{
+	font-family: 'Museo_Sans_Cyrl_300', Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	color: #000;
+}
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;	
+}
+h1, h2, h3, h4, h5, h6{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: Natasha, sans-serif;
+}
+h2{
+	font-size: 37px;
+	letter-spacing: 2px;
+	margin: 80px 0 65px;
+}
+div, section, form, button, span, p{
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+.white{
+	color: #fff;
+}
+.flex{
+	display: flex;
+}
+/*Первый экран*/
+.header{
+	background: url(../img/background.png) no-repeat center top / cover;
+	height: 100vh;
+	color: #fff;
+}
+.header .container {
+    height: 100vh;
+}
+nav{
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+    top: 8%;
+    width: 100%;
+}
+.logo{
+	font-family: 'museo_sans_cyrl900';
+	font-size: 17px;
+	text-transform: uppercase;
+}
+.logo span{
+	font-family: 'Museo_Sans_Cyrl_100';
+}
+.menu__item{
+	font-family: 'museo_sans_cyrl900';
+	text-transform: uppercase;
+	margin-right: 43px;
+}
+.mail{
+	font-size: 13px;
+	font-weight: 300;
+	border-bottom: 1px solid #696b67;
+}
+.title{
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	width: 100%;
+	text-align: center;	
+}
+.title__main{
+	font-size: 49px;
+	letter-spacing: 3px;
+}
+.title__subtitle{
+	font-family: 'Museo_Sans_Cyrl_100';
+	font-size: 29px;
+	text-transform: uppercase;	
+}
+.arrow{
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 8%;
+	margin-left: -19px;
+	font-size: 18px;
+	text-align: center;
+	width: 38px;
+	height: 38px;
+	line-height: 34px;
+	border: 1px solid #fff;
+	border-radius: 50%;	
+}
+/*Второй экран*/
+.scope-wrap{
+	justify-content: space-between;
+}
+h3{
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: #888886;
+	margin-bottom: 46px;
+}
+.scope{
+	width: 460px;
+}
+.scope__title{
+	margin-bottom: 40px;
+}
+.scope__text{
+	width: 420px;
+	line-height: 1.5;
+}
+.merit{
+	flex-direction: column;
+	align-items: flex-start;
+	width: 460px;
+}
+.merit__content{
+	justify-content: space-between;
+}
+.merit-list__item{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.merit-list__romb{
+	width: 72px;
+	height: 72px;
+	border: 1px solid #3e6534;
+	transform: rotate(45deg);	
+}
+.merit-list__romb-small{
+	width: 58px;
+	height: 58px;
+	border: 1px solid #cddbc3;
+	margin: 6px auto;
+}
+.merit-list__romb-small span{
+	font-size: 20px;
+	font-weight: 100;
+	color: #204d15;
+	line-height: 58px;
+	display: block;
+	transform: rotate(-45deg);
+}
+.merit-list__text{
+	font-family: 'Museo_Sans_Cyrl_100';
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	width: 145px;
+	color: #22241b;
+	margin-top: 22px;
+}
+.merit-list__text span{
+	display: block;
+}
+.contact{
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+}
+.contact__title{
+	margin: 35px 0 30px;
+}
+.contact__wrap{
+	justify-content: space-between;
+	align-items: center;
+}
+.contact-list__item{	
+	padding-bottom: 12px;
+}
+.contact-list__item a{
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #204d15;
+	border-bottom: 1px solid #becbbb;
+}
+.write__not {
+	font-size: 14px;
+	font-style: italic;
+	color: #797a77;
+	padding-right: 12px;
+}
+.write__not span{
+	padding-left: 12px;
+}
+.fa-user-o{
+	font-size: 25px;
+	line-height: 64px;
+	text-align: center;
+	color: #204d15;
+	background: #eef1ed;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+/*Третий экран*/
+.skills-wrap{
+	align-items: center;
+	justify-content: space-between;
+}
+.skills-list__circle{
+	width: 59px;
+	height: 59px;
+	border: 1px solid #204d15;
+	border-radius: 50%;	
+}
+.skills-list__circle-small{
+	width: 47px;
+	height: 47px;
+	border: 1px solid #afb4ae;
+	border-radius: 50%;
+	margin: 5px auto;
+}
+.skills-list__circle-small span{
+	font-size: 13px;
+	font-weight: 100;
+	text-align: center;
+	color: #204d15;
+	line-height: 47px;
+	display: block;
+}
+.skills-list__text{
+	font-family: 'museo_sans_cyrl900';
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #4b4c47;
+	text-align: center;
+	padding-left: 26px;
+}
+/*Четвертый экран*/
+.works-wrap{
+	justify-content: space-between;
+	margin-bottom: 55px;
+}
+.works__item{
+	width: 299px;
+	height: 299px;
+	margin-right: 20px;
+	position: relative;
+}
+.works__text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.56);
+	color: #fff;
+	text-align: center;
+	padding-top: 120px;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+.works__item:hover .works__text{
+	opacity: 1;
+}
+.works__title{
+	font-family: 'museo_sans_cyrl900';
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.works__link{
+	font-size: 13px;
+	color: #fff;
+	border-bottom: 1px solid #868687;
+}
+/*Пятый экран*/
+.footer{
+	padding: 67px 0 111px;
+}
+.future{
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #888886;
+	letter-spacing: 1.2px;
+	margin: 0;
+}
